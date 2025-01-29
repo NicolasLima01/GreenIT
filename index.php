@@ -17,7 +17,7 @@
                 <li><a href="">Conceitos</a></li>
                 <li><a href="">Importância</a></li>
                 <li><a href="">Benefícios</a></li>
-                <li><a href="">Cadastro</a></li>
+                <li><a href="cadastro.php">Cadastro</a></li>
             </menu>
         </nav>
     </header>
@@ -48,16 +48,6 @@
 
 
         </section>
-
-        <form action="submit">
-            <h2>Cadastro</h2>
-            Nome<input type=text>
-            Email<input type=text>
-            Telefone<input type=text>
-            Senha<input type=text>
-            <button>Cadastrar</button>
-        </form>
-
     </main>
     <?php
     ?>

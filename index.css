@@ -42,10 +42,6 @@ header nav menu li a{
 /*------------------MAIN--------------------*/
 
 main{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    column-gap: 50px;
     height: 200vh;
     background-color: whitesmoke;
     padding: 50px 500px;
