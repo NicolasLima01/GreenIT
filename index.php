@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
         <h1>GreenIT</h1>
         <nav>
             <menu>
-                <li><a href="">Conceitos</a></li>
-                <li><a href="">Importância</a></li>
-                <li><a href="">Benefícios</a></li>
+                <li><a href="#">Conceitos</a></li>
+                <li><a href="#">Importância</a></li>
+                <li><a href="#">Benefícios</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
             </menu>
         </nav>

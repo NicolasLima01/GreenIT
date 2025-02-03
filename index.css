@@ -44,44 +44,10 @@ header nav menu li a{
 main{
     height: 200vh;
     background-color: whitesmoke;
-    padding: 50px 500px;
+    padding: 50px 350px;
 }
 
 .topico-sessao{
     margin: 50px 0;
     gap: 50px;
-}
-
-form{
-    margin-top: 50px;
-    padding: 10px;
-    border: solid 1px black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 320px;
-    grid-column-start: 2; /*identifica de que coluna o item começa*/
-    grid-row-start: 1; /*identifica de que linha o item começa*/
-    grid-row-end: 3; /*identifica de que linha o item termina*/
-}
-
-form input{
-    margin: 10px 0;
-}
-
-form h2{
-    align-self: center;
-}
- 
-form button{
-    height: 30px;
-    background-color: rgb(201, 200, 200);
-    border-radius: 10px;
-    border: none;
-}
-
-form button:hover{
-    background-color: rgb(218, 218, 218);
-    transform: scale(1.05);
 }

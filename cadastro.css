@@ -38,6 +38,7 @@ li{
 
 li a{
     text-decoration: none;
+    text-decoration: none;
 }
 
 /*------------------MAIN--------------------*/
@@ -50,36 +51,45 @@ main{
     align-items: center;
 }
 
-form{
+.cadastro{
     margin-top: 50px;
-    padding: 10px;
     border: solid 1px black;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 300px;
-    height: 320px;
-    grid-column-start: 2; /*identifica de que coluna o item começa*/
-    grid-row-start: 1; /*identifica de que linha o item começa*/
-    grid-row-end: 3; /*identifica de que linha o item termina*/
+    height: auto;
+}
+
+.cadastro h1{
+    margin: 10px 85px;
+}
+
+hr{
+    color: black;
+}
+
+form{
+    padding: 10px;    
+    display: flex;
+    flex-direction: column;    
 }
 
 form input{
     margin: 10px 0;
+    border-radius: 5px;
+    height: 25px;
+    border: solid 1px gray;
 }
 
-form h2{
-    align-self: center;
-}
+
  
 form button{
     height: 30px;
-    background-color: rgb(201, 200, 200);
+    background-color: rgb(168, 168, 168);
     border-radius: 10px;
     border: none;
 }
 
 form button:hover{
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(204, 204, 204);
     transform: scale(1.05);
 }

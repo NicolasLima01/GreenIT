@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,22 +13,26 @@
         <h1><a href="index.php">GreenIT</a></h1>
         <nav>
             <menu>
-                <li><a href="">Conceitos</a></li>
-                <li><a href="">Importância</a></li>
-                <li><a href="">Benefícios</a></li>
+                <li><a href="#">Conceitos</a></li>
+                <li><a href="#">Importância</a></li>
+                <li><a href="#">Benefícios</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
             </menu>
         </nav>
     </header>
     <main>
-        <form action="submit">
-            <h2>Cadastro</h2>
-            Nome<input type=text>
-            Email<input type=text>
-            Telefone<input type=text>
-            Senha<input type=text>
+        <div class="cadastro">
+        <h1>Cadastro</h1>
+        <hr>
+        <form action="submit">            
+            
+            Nome:<input type=text name="nome">
+            E-mail:<input type=text name="email">
+            Telefone:<input type=text name="telefone">
+            Senha:<input type=text name="senha">
             <button>Cadastrar</button>
         </form>
+        </div>
     </main>
 </body>
 
