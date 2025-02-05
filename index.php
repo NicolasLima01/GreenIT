@@ -93,7 +93,7 @@
     $senhaLogin = $_POST['senha-login'];
     if (isset($emailLogin) && isset($senhaLogin)) {
         //montando query para verificar o email e senha do login
-        $login = "SELECT * from usuario where email = '$emailLogin' and senha = md5('$senhaLogin')";
+        $login = "SELECT * from usuario where email='$emailLogin' and senha='$senhaLogin'";
 
         //resultado da query
         $resultado = $conn->query($login);
