@@ -79,17 +79,15 @@ form input{
     height: 25px;
     border: solid 1px gray;
 }
-
-
  
-form button{
+form #button{
     height: 30px;
     background-color: rgb(168, 168, 168);
     border-radius: 10px;
     border: none;
 }
 
-form button:hover{
+form #button:hover{
     background-color: rgb(204, 204, 204);
     transform: scale(1.05);
 }

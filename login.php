@@ -25,11 +25,9 @@
         <h1>Cadastro</h1>
         <hr>
         <form action="index.php" method="post">            
-            Nome:<input type=text name="nome" required>
-            E-mail:<input type=text name="email" required>
-            Telefone:<input type=text name="telefone" required>
-            Senha:<input type=password name="senha" required>
-            <input type="submit" value="Cadastrar" id="button">
+            E-mail:<input type=text name="email-login" required>
+            Senha:<input type=password name="senha-login" required>
+            <input type="submit" value="Entrar" id="button">
         </form>
         </div>
     </main>
