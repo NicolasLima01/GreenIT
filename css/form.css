@@ -51,7 +51,7 @@ main{
     align-items: center;
 }
 
-.cadastro{
+.formulario{
     margin-top: 50px;
     border: solid 1px black;
     border-radius: 20px;
@@ -59,7 +59,7 @@ main{
     height: auto;
 }
 
-.cadastro h1{
+.formulario h1{
     margin: 10px 85px;
 }
 

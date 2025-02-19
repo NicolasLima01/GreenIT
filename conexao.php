@@ -1,18 +1,19 @@
 <?php 
 
 //parametros para a conexao
-$srvr = "localhost"; //servidor
+$svr = "localhost"; //servidor
 $user = "root"; //usuario
 $pswd = ""; //senha
-$dtbs = "green_it"; //banco
+$db = "green_it"; //banco
 
 //abrindo conexao
-$conn = new mysqli($srvr, $user, $pswd, $dtbs);
-
-//verificando a conexao
-if ($conn->connect_error){
-    die ("Falha na conexão".$conn->connect_error);
+try{
+    $conn = new PDO("mysql:host=".$svr.";dbname=".$db, $user, $pswd);
 }
 
+catch (PDOException $ex){
+    //Mensagem de erro
+    echo "Erro: ".$ex->getMessage();
+}
 
 ?>

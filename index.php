@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenIT</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -59,59 +59,6 @@
 
         </section>
     </main>
-    <?php
-
-    //------------------------------------------------------
-    //                        CADASTRO
-    //------------------------------------------------------
-
-    //iniciando sessao
-    session_start();
-
-    //Incluir arquivo de conexao
-    include 'conexao.php';
-
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $senha = $_POST['senha'];
-
-    //Realizar cadastro
-    if (isset($nome) && isset($email) && isset($telefone) && isset($senha)) {
-        //montando query
-        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone','$senha')";
-
-        //resultado da query
-        $resultado = $conn->query($cadastro);
-    }
-
-    //------------------------------------------------------
-    //                        LOGIN
-    //------------------------------------------------------
-
-    $emailLogin = $_POST['email-login'];
-    $senhaLogin = $_POST['senha-login'];
-    if (isset($emailLogin) && isset($senhaLogin)) {
-        //montando query para verificar o email e senha do login
-        $login = "SELECT * from usuario where email='$emailLogin' and senha='$senhaLogin'";
-
-        //resultado da query
-        $resultado = $conn->query($login);
-
-        if ($resultado->num_rows > 0) {
-            //login bem sucedido
-            $_SESSION['usuario'] = $user;
-            echo "Login efetuado com sucesso! Bem vindo, " . $user;
-        } else {
-            //falha no logon
-            echo "Usuario ou senha incorretos";
-        }
-    }
-
-    //fecha conexao
-    $conn->close();
-
-    ?>
 </body>
 
 </html>
