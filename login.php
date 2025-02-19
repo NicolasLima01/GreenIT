@@ -40,12 +40,13 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
     <header>
-        <h1><a href="login.php">GreenIT</a></h1>
+        <h1><a href="index.php">GreenIT</a></h1>
         <nav>
             <menu>
                 <li><a href="#">Conceitos</a></li>
