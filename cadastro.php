@@ -48,7 +48,7 @@ if ($_POST) {
             <menu>
                 <li><a href="#">Conceitos</a></li>
                 <li><a href="#">Importância</a></li>
-                <li><a href="#">Benefícios</a></li>
+                <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
             </menu>
         </nav>

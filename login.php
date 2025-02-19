@@ -40,7 +40,7 @@ if ($_POST) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
@@ -51,7 +51,7 @@ if ($_POST) {
             <menu>
                 <li><a href="#">Conceitos</a></li>
                 <li><a href="#">Importância</a></li>
-                <li><a href="#">Benefícios</a></li>
+                <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
             </menu>
         </nav>

@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1>GreenIT</h1>
+        <h1><a href="index.php">GreenIT</a></h1>
         <nav>
             <menu>
                 <li><a href="#">Conceitos</a></li>
@@ -54,10 +54,10 @@
 
             <section class="topico-sessao">
                 <h2>Quais são as melhores práticas de Green IT?</h2><br>
-                <b>Utilizar fontes de energia limpa:</b>
+                <b>Utilizar fontes de energia limpa:</b><br>
                 <p>A transição para fontes de energia renováveis é uma das iniciativas mais impactantes no universo da TI Verde. Ao optar por fontes como energia solar ou eólica, as empresas podem significativamente reduzir sua pegada de carbono.</p><br>
 
-                <b>Cloud Computing:</b>
+                <b>Cloud Computing:</b><br>
                 <p>A computação em nuvem revolucionou a forma como as empresas acessam e armazenam dados. Optar por soluções baseadas na nuvem, especialmente aquelas que seguem a abordagem cloud first, significa que as empresas podem reduzir significativamente a necessidade de hardware on-site.
                     Isso diminui o consumo de energia e reduz a necessidade de resfriamento, outro grande consumidor de energia em centros de dados. Além disso, os provedores de nuvem frequentemente atualizam e otimizam sua infraestrutura, garantindo que os recursos sejam usados da maneira mais eficiente possível.</p>
 
