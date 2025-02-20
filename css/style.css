@@ -11,7 +11,7 @@ body{
 /*-----------------HEADER-------------------*/
 
 header{
-    background-color: lightgreen;
+    background-color: rgb(85, 240, 85);
     height: 10vh;
     padding: 0 200px;
     display: flex;
@@ -89,4 +89,16 @@ main{
     /*Faz gap entre os topicos*/
     margin: 50px 0;
     gap: 50px;
+}
+
+/*------------------Rodapé--------------------*/
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
