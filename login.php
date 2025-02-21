@@ -58,7 +58,9 @@ if ($_POST) {
     </header>
     <main>
         <div class="formulario">
-            <h1>Login</h1>
+            <div>    
+                <h1>Login</h1>
+            </div>
             <hr>
             <form action="login.php" method="post">
                 E-mail:<input type=text name="email-login" required>

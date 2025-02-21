@@ -16,12 +16,12 @@ if ($_POST) {
     $senha = $_POST['senha'];
 
         //montando query de cadastro
-        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone','$senha')";
+        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone',md5('$senha'))";
 
         //resultado da query
         $sql = $conn->prepare($cadastro);
         if ($sql->execute()){ 
-            echo "<script>alert('Cadastro feito!')<script>";
+            echo "<script>alert('Cadastro feito!')</script>";
         
         } else { 
             echo "<script>alert('Erro no cadastro!');</script>";
@@ -55,13 +55,16 @@ if ($_POST) {
     </header>
     <main>
         <div class="formulario">
-            <h1>Cadastro</h1>
+            <div>  
+                <h1>Cadastro</h1>
+            </div>      
             <hr>
             <form action="cadastro.php" method="post">
-                Nome:<input type=text name="nome" required>
-                E-mail:<input type=text name="email" required>
-                Telefone:<input type=text name="telefone" required>
-                Senha:<input type=password name="senha" required>
+                <!-- aria-autocomplete="none" faz com que o navegador não complete o texto -->
+                Nome:<input type=text name="nome" required aria-autocomplete="none">
+                E-mail:<input type=email name="email" requiredaria-autocomplete="none">
+                Telefone:<input type=text name="telefone" required aria-autocomplete="none">
+                Senha:<input type=password name="senha" required aria-autocomplete="none">
                 <input type="submit" value="Cadastrar" id="button">
             </form>
         </div>
