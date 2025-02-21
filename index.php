@@ -1,15 +1,9 @@
 <?php
-//if ($_SESSION['usuario'] == null) { 
-?>
-<?php //print_r($_SESSION); 
-?>
-<script>
-    //alert('Deu certo!') 
-</script>
-<script>
-    ativaSession();
-</script>
-<?php // } 
+// Para usar uma sessão já criada, 
+// é necessário informar o nome da sessão
+session_name("greenit");
+session_start();
+//Verificação do usuario no fim desse código
 ?>
 
 
@@ -98,11 +92,21 @@
 </body>
 
 <script>
-    function ativaSession() {   
+    function ativaSession(usuario) {   
         let sessionUser = document.querySelector('div.session-user');
         sessionUser.setAttribute('style', 'height: 3vh');
+        sessionUser.textContent = "Olá "+ usuario;
     }
-    ativaSession(); 
+    //ativaSession(); 
 </script>
 
 </html>
+
+<?php
+// Quando a sessão tiver um usuário logado, 
+// ela irá mostrar uma área com um mensagem 
+// para o usuário logado
+if (isset($_SESSION['usuario'])) { 
+    $user = $_SESSION['usuario'];?>
+    <script> ativaSession(<?php // echo "$user"; ?>); </script>"; <?php
+}?> 

@@ -23,16 +23,16 @@ if ($_POST) {
     if ($result['id'] > 0) {
         //login bem sucedido
         session_name("greenit");
-        if (!isset($_SESSION)) {
-            session_start();
-            $_SESSION['usuario'] = $result['nome'];
-            //echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
-            header('index.php');
-        } else {
-            //falha no logon 
-            echo "<script> alert('Usuario ou senha incorretos');</script>";
-        }
+        session_start();
+        $_SESSION['usuario'] = $result['nome'];
+        //echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
+        header('../index.php');
     }
+    else {
+        //falha no logon 
+        echo "<script> alert('Usuario ou senha incorretos');</script>";
+    }
+    
 }
 ?>
 
