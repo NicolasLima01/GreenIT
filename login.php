@@ -4,31 +4,34 @@
 //                        LOGIN
 //------------------------------------------------------
 
-session_start();
-
 if ($_POST) {
     include 'conexao.php';
     $emailLogin = $_POST['email-login'];
     $senhaLogin = $_POST['senha-login'];
-    if (isset($emailLogin) && isset($senhaLogin)) {
-        //montando query para verificar o email e senha do login
-        $login = "SELECT * from usuario where email = :e and senha = :s";
-        //resultado da query
-        $sql = $conn->prepare($login);
-        $sql->bindParam(':e', $emailLogin);
-        $sql->bindParam(':s', $senhaLogin);
-        $sql->execute();
-        //Pega a linha de resultado
-        $result = $sql->fetch(PDO::FETCH_ASSOC);
+    //montando query para verificar o email e senha do login
+    $login = "SELECT * from usuario where email = :e and senha = md5(:s)";
 
-        if ($result['id'] > 0) {
-            //login bem sucedido
-            $_SESSION['usuario'] = $user; ?>
-            <script>alert("Login efetuado com sucesso! Bem vindo, <?php echo $user;?>")</script>
-        <?php } else {
-            //falha no logon ?>
-            <script> alert("Usuario ou senha incorretos");</script>
-        <?php }
+    //resultado da query
+    $sql = $conn->prepare($login);
+    $sql->bindParam(':e', $emailLogin);
+    $sql->bindParam(':s', $senhaLogin);
+    $sql->execute();
+
+    //Pega a linha de resultado
+    $result = $sql->fetch(PDO::FETCH_ASSOC);
+
+    if ($result['id'] > 0) {
+        //login bem sucedido
+        session_name("greenit");
+        if (!isset($_SESSION)) {
+            session_start();
+            $_SESSION['usuario'] = $result['nome'];
+            //echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
+            header('index.php');
+        } else {
+            //falha no logon 
+            echo "<script> alert('Usuario ou senha incorretos');</script>";
+        }
     }
 }
 ?>
@@ -47,7 +50,7 @@ if ($_POST) {
 
 <body>
     <header>
-        <a href="index.php"><img src="images/GreenIT.png" alt=""></>
+        <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
         <nav>
             <menu>
                 <li><a href="#">Conceitos</a></li>
@@ -59,7 +62,7 @@ if ($_POST) {
     </header>
     <main>
         <div class="formulario">
-            <div>    
+            <div>
                 <h1>Login</h1>
             </div>
             <hr>
@@ -67,7 +70,8 @@ if ($_POST) {
                 <label for="email-login">E-mail:</label>
                 <input type=email name="email-login" required aria-autocomplete="none" placeholder="Digite seu e-mail">
                 <label for="senha-login">Senha:</label>
-                <input type=password name="senha-login" required aria-autocomplete="none" placeholder="Digite sua senha">
+                <input type=password name="senha-login" required
+                    aria-autocomplete="none" placeholder="Digite sua senha">
                 <input type="submit" value="Entrar" id="button">
             </form>
         </div>

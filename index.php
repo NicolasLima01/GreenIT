@@ -1,3 +1,18 @@
+<?php
+//if ($_SESSION['usuario'] == null) { 
+?>
+<?php //print_r($_SESSION); 
+?>
+<script>
+    //alert('Deu certo!') 
+</script>
+<script>
+    ativaSession();
+</script>
+<?php // } 
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,14 +37,14 @@
             </menu>
         </nav>
     </header>
-    <div class="section-user" aria-hidden="true">
+    <div class="session-user" aria-hidden="true">
         <!-- Só aparece valor após usar session -->
     </div>
 
     <main>
         <div class="container">
             <div class="titulo">
-            <h1>Green IT - O Futuro da Tecnologia</h1>
+                <h1>Green IT - O Futuro da Tecnologia</h1>
             </div>
             <section class="topico-sessao">
                 <hr>
@@ -77,10 +92,17 @@
     </main>
 
     <footer>
-        <p>&copy Todos os direitos reservados</p>
+        <p>&copy GreenIT - Todos os direitos reservados</p>
     </footer>
 
 </body>
 
+<script>
+    function ativaSession() {   
+        let sessionUser = document.querySelector('div.session-user');
+        sessionUser.setAttribute('style', 'height: 3vh');
+    }
+    ativaSession(); 
+</script>
 
 </html>

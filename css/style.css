@@ -9,8 +9,15 @@ body{
     font-family: Arial, Helvetica, sans-serif
 }
 
+/* Adiciona uma fonte externa */
+@font-face {
+    font-family: "Intro Rust";
+    src: url(../fonts/IntroRust-Base.otf);
+}
+
 /*-----------------HEADER-------------------*/
 
+/* Cabeçalho */
 header{
     background-color: rgb(85, 240, 85);
     height: 10vh;
@@ -18,8 +25,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Intro Rust"; /*Usando a fonte externa da linha 15*/
 }
 
+/* Navegação */
 nav{
     width: 60%;
     height: 100%;
@@ -27,6 +36,7 @@ nav{
     justify-content: space-between;
 }
 
+/* Menu de navegação */
 nav menu{
     width: 100%;
     display: flex;
@@ -35,6 +45,7 @@ nav menu{
     align-items: center;
 }
 
+/* Item do menu */
 nav menu li{
     list-style-type: none;
     color: black;
@@ -45,6 +56,7 @@ nav menu li{
     justify-content: center;
 }
 
+/* Link do item de menu */
 nav li a{
     text-decoration: none;
     color: black;
@@ -55,18 +67,15 @@ nav li a{
     align-items: center;
 }
 
+/* Acontece quando o mouse está sobre um item de menu */
 nav a:hover{
     background-color: rgb(120, 199, 120);
 }
 
 /* Div que indica que aparece com o usuaário logado */
-.section-user{
-    color: white;
+.session-user{
     background-color: green;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-}
+} 
 
 
 
@@ -82,10 +91,6 @@ main{
     /* url da imagem de fundo */
     background: url('../images/fundo.jpg') no-repeat fixed;
     background-size: cover; /* Faz com que a imagem cubra o fundo se ajustando ao tamanho da página*/
-}
-
-main h1{
-    align-self: center;
 }
 
 .container{
