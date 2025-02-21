@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenIT</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">    
 </head>
 
 <body>
 
     <header>
-        <h1><a href="index.php">GreenIT</a></h1>
+        <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
         <nav>
             <menu>
                 <li><a href="#">Conceitos</a></li>

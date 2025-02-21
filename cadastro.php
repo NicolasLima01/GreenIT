@@ -36,14 +36,15 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>GreenIT - Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
     <header>
-        <h1><a href="index.php">GreenIT</a></h1>
+        <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
         <nav>
             <menu>
                 <li><a href="#">Conceitos</a></li>
@@ -61,10 +62,14 @@ if ($_POST) {
             <hr>
             <form action="cadastro.php" method="post">
                 <!-- aria-autocomplete="none" faz com que o navegador não complete o texto -->
-                Nome:<input type=text name="nome" required aria-autocomplete="none">
-                E-mail:<input type=email name="email" requiredaria-autocomplete="none">
-                Telefone:<input type=text name="telefone" required aria-autocomplete="none">
-                Senha:<input type=password name="senha" required aria-autocomplete="none">
+                <label for="nome">Nome:</label>
+                <input type=text name="nome" required aria-autocomplete="none" placeholder="Digite seu nome">
+                <label for="email">E-mail:</label>
+                <input type=email name="email" required aria-autocomplete="none" placeholder="Digite seu e-mail">
+                <label for="telefone">Telefone:</label>
+                <input type=text name="telefone" required aria-autocomplete="none" placeholder="Digite seu telefone">
+                <label for="senha">Senha:</label>
+                <input type=password name="senha" required aria-autocomplete="none" placeholder="Digite sua senha">
                 <input type="submit" value="Cadastrar" id="button">
             </form>
         </div>

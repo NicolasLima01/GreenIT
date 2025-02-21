@@ -3,10 +3,9 @@
 
 main{
     height: 90vh;
-    background-color: whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .formulario{
@@ -15,45 +14,58 @@ main{
     border-radius: 20px;
     width: 300px;
     height: auto;
-    background-color: rgb(199, 255, 199);
+    background-color: white;
 }
 
 .formulario div{
-    background-color: rgb(199, 255, 199);
+    height: 10vh; /* 10 do tamanho da pg */
+    color: rgb(0, 87, 0);
+    background-color: white;
+    border-top-right-radius: 20px; /* Borda superior direita */
+    border-top-left-radius: 20px; /* Borda superior esquerda */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.formulario h1{
-    margin: 10px;
-}
+}   
 
 hr{
     color: black;
 }
 
 form{
-    padding: 10px;    
+    padding: 10px;
+    background-color: whitesmoke; 
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;   
     display: flex;
     flex-direction: column;    
 }
 
+form label{
+    margin: 10px 0px 5px 0px; /*10px para cima, 5px para baixo*/
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(1, 92, 1);
+}
+
 form input{
-    margin: 10px 0;
+    height: 30px;
+    padding: 0px 10px; /* espaço para placeholder */
+    font-size: 14px; /*tamanho da fonte*/
     border-radius: 5px;
-    height: 25px;
     border: solid 1px gray;
 }
+
  
 form #button{
     height: 30px;
-    background-color: rgb(168, 168, 168);
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(7, 190, 7);
     border-radius: 10px;
-    border: none;
+    border: solid 1px green;
 }
 
 form #button:hover{
-    background-color: rgb(204, 204, 204);
-    transform: scale(1.05);
+    background-color: rgb(7, 141, 7);
 }
