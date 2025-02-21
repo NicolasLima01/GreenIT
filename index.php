@@ -22,12 +22,18 @@
             </menu>
         </nav>
     </header>
+    <div class="section-user">
+        <p>Olá, <?php ?></p>
+    </div>
 
     <main>
         <div class="container">
+
+            <h1>Green IT - O Futuro da Tecnologia</h1>
+        
             <section class="topico-sessao">
                 <h2>O que é GreenIT?</h2><br>
-                <p>Seu conceito compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p><br>
+                <p>GreenIT ou TI Verde compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p><br>
                 <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
             </section>
 
