@@ -59,9 +59,13 @@ nav a:hover{
     background-color: rgb(120, 199, 120);
 }
 
+/* Div que indica que aparece com o usuaário logado */
 .section-user{
+    color: white;
     background-color: green;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
 }
 
 
@@ -78,7 +82,10 @@ main{
     /* url da imagem de fundo */
     background: url('../images/fundo.jpg') no-repeat fixed;
     background-size: cover; /* Faz com que a imagem cubra o fundo se ajustando ao tamanho da página*/
-    
+}
+
+main h1{
+    align-self: center;
 }
 
 .container{
@@ -86,10 +93,18 @@ main{
     width: 60%;
     padding: 30px 100px ;
     background-color: whitesmoke;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
 }
 
-main .container h1{
-    font-size: 3px;
+.container .titulo{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.topico-sessao hr{
+    margin: 20px 0;
 }
 
 .topico-sessao{

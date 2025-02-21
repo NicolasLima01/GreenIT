@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenIT</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,22 +22,24 @@
             </menu>
         </nav>
     </header>
-    <div class="section-user">
-        <p>Olá, <?php ?></p>
+    <div class="section-user" aria-hidden="true">
+        <!-- Só aparece valor após usar session -->
     </div>
 
     <main>
         <div class="container">
-
+            <div class="titulo">
             <h1>Green IT - O Futuro da Tecnologia</h1>
-        
+            </div>
             <section class="topico-sessao">
+                <hr>
                 <h2>O que é GreenIT?</h2><br>
                 <p>GreenIT ou TI Verde compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p><br>
                 <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
             </section>
 
             <section class="topico-sessao">
+                <hr>
                 <h2>Benefícios</h2><br>
                 <menu>
                     <h3>Redução de custos</h3><br>
@@ -60,6 +62,7 @@
             </section>
 
             <section class="topico-sessao">
+                <hr>
                 <h2>Quais são as melhores práticas de Green IT?</h2><br>
                 <b>Utilizar fontes de energia limpa:</b><br>
                 <p>A transição para fontes de energia renováveis é uma das iniciativas mais impactantes no universo da TI Verde. Ao optar por fontes como energia solar ou eólica, as empresas podem significativamente reduzir sua pegada de carbono.</p><br>
@@ -70,13 +73,13 @@
 
             </section>
         </div>
-        
+
     </main>
 
     <footer>
-    <p>&copy Todos os direitos reservados</p>
+        <p>&copy Todos os direitos reservados</p>
     </footer>
-    
+
 </body>
 
 
