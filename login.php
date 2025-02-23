@@ -9,22 +9,25 @@ if ($_POST) {
     $emailLogin = $_POST['email-login'];
     $senhaLogin = $_POST['senha-login'];
     //montando query para verificar o email e senha do login
-    $login = "SELECT * from usuario where email = :e and senha = md5(:s)";
+    $login = "SELECT * from usuario where email = :e LIMIT 1";
 
     //resultado da query
     $sql = $conn->prepare($login);
     $sql->bindParam(':e', $emailLogin);
-    $sql->bindParam(':s', $senhaLogin);
     $sql->execute();
 
-    //Pega a linha de resultado
-    $result = $sql->fetch(PDO::FETCH_ASSOC);
+    //Pega a linha de resultado do usuario
+    $usuario = $sql->fetch(PDO::FETCH_ASSOC);
 
-    if ($result['id'] > 0) {
+    //Verificando a senha criptografada
+    $hash = password_verify($senhaLogin, $usuario['senha']);
+
+    if ($usuario['id'] > 0 && $hash == true)
+    {
         //login bem sucedido
         session_name("greenit");
         session_start();
-        $_SESSION['usuario'] = $result['nome'];
+        $_SESSION['usuario'] = $usuario['nome'];
         //echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
         header('../index.php');
     }

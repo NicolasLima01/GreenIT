@@ -13,10 +13,12 @@ if ($_POST) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $senha = $_POST['senha'];
+    $senha = $_POST['senha']; 
+    //Gera criptografia individual, que não é repetida em valores iguais como o md5
+    $hashSenha = password_hash($senha, PASSWORD_DEFAULT);
 
         //montando query de cadastro
-        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone',md5('$senha'))";
+        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone', '$hashSenha')";
 
         //resultado da query
         $sql = $conn->prepare($cadastro);
