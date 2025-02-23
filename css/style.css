@@ -134,51 +134,77 @@ footer{
 /*---------------Media Query-------------------*/
 
 
-@media (min-width: 1000px) and (max-width: 1350px){
+@media (min-width: 1000px) and (max-width: 1400px){
+    /* diminuui o espaço interno do header */
     body header{
         padding: 0 150px;
     }    
 
+    /* Aumenta a largura do nav */
     body header nav{
         width: 70%;
     }
-    
+
+    /* diminuui o espaço interno do container */
+    body main .container {
+        padding: 30px 70px ;
+    }
+
+    /* Modifica o tamanho da fonte do titulo do artigo */
     body main .container .titulo{
         font-size: 14px;
     }
 }
 
 @media (min-width: 950px) and (max-width: 1100px){
+    /* Modifica o tamanho da fonte de toda a pg */
     body{
         font-size: 14px;
     }
 
+    /* diminuui o espaço interno do header */
     body header{
         padding: 0 80px;
     }   
     
+    /* Aumenta a largura do nav */
     body header nav{
         width: 80%;
     }
 
+    /* diminuui o espaço interno do container */
+    body main .container {
+        padding: 30px 40px;
+    }
+
+    /* Modifica o tamanho da fonte do titulo do artigo */
     body main .container .titulo{
         font-size: 11px;
     }
 }
 
 @media (max-width: 950px){
+    /* Modifica o tamanho da fonte de toda a pg */
     body{
         font-size: 12px;
     }
 
+    /* retira o espaço interno do header */
     body header{
         padding: 0 0px;
     }  
 
+    /* Aumenta a largura do nav */
     body header nav{
         width: 95%;
     }
 
+    /* diminuui o espaço interno do container */
+    body main .container {
+        padding: 30px 20px ;
+    }
+
+    /* Modifica o tamanho da fonte do titulo do artigo */
     body main .container .titulo{
         font-size: 10px;
     }
