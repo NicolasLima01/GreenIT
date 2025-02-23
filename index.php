@@ -94,10 +94,11 @@ session_start();
 <script>
     function ativaSession(usuario) {   
         let sessionUser = document.querySelector('div.session-user');
-        sessionUser.setAttribute('style', 'height: 3vh');
+        sessionUser.setAttribute('style', 'height: 4vh');
+        sessionUser.setAttribute('style', 'font-family: "Intro Rust"');
+        sessionUser.style.color = "white";
         sessionUser.textContent = "Olá "+ usuario;
     }
-    //ativaSession(); 
 </script>
 
 </html>
@@ -108,5 +109,5 @@ session_start();
 // para o usuário logado
 if (isset($_SESSION['usuario'])) { 
     $user = $_SESSION['usuario'];?>
-    <script> ativaSession(<?php // echo "$user"; ?>); </script>"; <?php
+    <?php echo "<script> ativaSession('$user'); </script>"; ?><?php
 }?> 
