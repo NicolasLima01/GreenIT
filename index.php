@@ -12,6 +12,8 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
+    <!-- janela de visualização, fornece ao navegador instruções 
+     sobre como controlar as dimensões da página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenIT</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -96,7 +98,7 @@ session_start();
         let sessionUser = document.querySelector('div.session-user');
         sessionUser.setAttribute('style', 'height: 4vh');
         sessionUser.setAttribute('style', 'font-family: "Intro Rust"');
-        sessionUser.style.color = "white";
+        sessionUser.style.color = "white";         
         sessionUser.textContent = "Olá "+ usuario;
     }
 </script>

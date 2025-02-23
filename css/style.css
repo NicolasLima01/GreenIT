@@ -6,7 +6,7 @@
 
 body{
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Adiciona uma fonte externa */
@@ -14,6 +14,7 @@ body{
     font-family: "Intro Rust";
     src: url(../fonts/IntroRust-Base.otf);
 }
+
 
 /*-----------------HEADER-------------------*/
 
@@ -61,7 +62,7 @@ nav li a{
     text-decoration: none;
     color: black;
     height: 100%;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,10 +76,8 @@ nav a:hover{
 /* Div que indica que aparece com o usuaário logado */
 .session-user{
     background-color: green;
+    
 } 
-
-
-
 
 /*------------------MAIN--------------------*/
 
@@ -86,12 +85,13 @@ main{
     min-height: 90vh; /*Tamanho minimo*/
     height: auto; /*Tamanho se ajusta ao conteúdo*/
     background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
 
     /* url da imagem de fundo */
     background: url('../images/fundo.jpg') no-repeat fixed;
     background-size: cover; /* Faz com que a imagem cubra o fundo se ajustando ao tamanho da página*/
+
+    display: flex;
+    justify-content: center;
 }
 
 .container{
@@ -129,4 +129,57 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*---------------Media Query-------------------*/
+
+
+@media (min-width: 1000px) and (max-width: 1350px){
+    body header{
+        padding: 0 150px;
+    }    
+
+    body header nav{
+        width: 70%;
+    }
+    
+    body main .container .titulo{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1100px){
+    body{
+        font-size: 14px;
+    }
+
+    body header{
+        padding: 0 80px;
+    }   
+    
+    body header nav{
+        width: 80%;
+    }
+
+    body main .container .titulo{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 950px){
+    body{
+        font-size: 12px;
+    }
+
+    body header{
+        padding: 0 0px;
+    }  
+
+    body header nav{
+        width: 95%;
+    }
+
+    body main .container .titulo{
+        font-size: 10px;
+    }
 }
