@@ -30,6 +30,7 @@ session_start();
                 <li><a href="#">Importância</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
+                <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li>
             </menu>
         </nav>
     </header>
@@ -94,12 +95,12 @@ session_start();
 </body>
 
 <script>
-    function ativaSession(usuario) {   
+    function ativaSession(usuario) {
         let sessionUser = document.querySelector('div.session-user');
         sessionUser.setAttribute('style', 'height: 4vh');
         sessionUser.setAttribute('style', 'font-family: "Intro Rust"');
-        sessionUser.style.color = "white";         
-        sessionUser.textContent = "Olá "+ usuario;
+        sessionUser.style.color = "white";
+        sessionUser.textContent = "Olá " + usuario;
     }
 </script>
 
@@ -109,7 +110,8 @@ session_start();
 // Quando a sessão tiver um usuário logado, 
 // ela irá mostrar uma área com um mensagem 
 // para o usuário logado
-if (isset($_SESSION['usuario'])) { 
-    $user = $_SESSION['usuario'];?>
-    <?php echo "<script> ativaSession('$user'); </script>"; ?><?php
-}?> 
+if (isset($_SESSION['usuario'])) {
+    $user = $_SESSION['usuario'];
+    echo "<script> ativaSession('$user'); </script>";
+}
+?>

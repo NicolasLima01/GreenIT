@@ -52,7 +52,7 @@ nav menu li{
     color: black;
     font-size: 18px;
     height: 100%;
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
 }
@@ -66,6 +66,11 @@ nav li a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav li a img{
+    width: 30px;
+    height: 30px;
 }
 
 /* Acontece quando o mouse está sobre um item de menu */
