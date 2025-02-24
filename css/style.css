@@ -16,7 +16,9 @@ body{
 }
 
 
-/*-----------------HEADER-------------------*/
+/*---------------------------------------------
+//                  HEADER
+---------------------------------------------*/
 
 /* Cabeçalho */
 header{
@@ -82,13 +84,51 @@ nav a:hover{
     background-color: rgb(120, 199, 120);
 }
 
-/* Div que indica que aparece com o usuaário logado */
+/* Div que indica que aparece com o usuário logado */
 .session-user{
     background-color: green;
-    
 } 
 
-/*------------------MAIN--------------------*/
+/* DROPDOWN LIST */
+
+/* Div do dropdown */
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+/* Lista do dropdown */
+.dropdown ul{
+    /* Desativa a exibição do elemento  */
+    display: none;
+    position: absolute; 
+    background-color: yellowgreen;
+    min-width: 200px;
+    height: 100px;
+}
+
+/*Quando o mouse passa sobre o dropdown, mostra o conteudo*/
+.dropdown:hover ul {
+    display: block;
+}
+.dropdown:hover ul hr{
+    color: black;
+    margin: 0 2px;
+}
+
+.dropdown ul li{
+    list-style: none;
+    width: 200px;
+    height: 20px;
+}
+.dropdown ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------------------------------
+//                   MAIN
+---------------------------------------------*/
 
 main{
     min-height: 90vh; /*Tamanho minimo*/
@@ -128,7 +168,9 @@ main{
     gap: 50px;
 }
 
-/*------------------Rodapé--------------------*/
+/*---------------------------------------------
+//                  RODAPÉ
+---------------------------------------------*/
 
 footer{
     height: 10vh;
@@ -140,7 +182,9 @@ footer{
     justify-content: center;
 }
 
-/*---------------Media Query-------------------*/
+/*---------------------------------------------
+//                MEDIA QUERY
+---------------------------------------------*/
 
 
 @media (min-width: 1100px) and (max-width: 1540px){
@@ -151,13 +195,13 @@ footer{
 
     /* Aumenta a largura do nav */
     body header nav{
-        width: 70%;
+        width: 75%;
     }
 
     /* diminuui o espaço interno do container */
     body main .container {
         padding: 30px 70px ;
-        width: 70%;
+        width: 75%;
     }
 
     /* Modifica o tamanho da fonte do titulo do artigo */
@@ -174,7 +218,7 @@ footer{
 
     /* diminuui o espaço interno do header */
     body header{
-        padding: 0 80px;
+        padding: 0 60px;
     }   
     
     /* Aumenta a largura do nav */
@@ -184,7 +228,7 @@ footer{
 
     /* diminuui o espaço interno do container */
     body main .container {
-        padding: 30px 40px;
+        padding: 30px 50px;
         width: 80%;
     }
 
@@ -194,7 +238,7 @@ footer{
     }
 }
 
-@media (max-width: 950px){
+@media (min-width: 600px) and (max-width: 950px){
     /* Modifica o tamanho da fonte de toda a pg */
     body{
         font-size: 12px;
@@ -204,15 +248,16 @@ footer{
     body header{
         padding: 0 0px;
     }  
-
+    
     /* Aumenta a largura do nav */
     body header nav{
         width: 95%;
+        visibility: hidden;
     }
 
     /* diminuui o espaço interno do container */
     body main .container {
-        padding: 30px 20px ;
+        padding: 30px 30px ;
         width: 90%;
     }
 
@@ -236,6 +281,7 @@ footer{
     /* Aumenta a largura do nav */
     body header nav{
         width: 95%;
+        visibility: hidden;
     }
 
     /* diminuui o espaço interno do container */

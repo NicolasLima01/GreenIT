@@ -33,10 +33,28 @@ session_start();
                 <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li>
             </menu>
         </nav>
+        <div></div>
+
+        <div class="dropdown">
+            <!-- Menu hamburguer -->
+            <img height="40px" width="40px" src="images/cardapio-menu.png" alt="Menu">
+                <ul>
+                    <li><a href="#">Conceitos</a></li>
+                    <hr>
+                    <li><a href="#">Importância</a></li>
+                    <hr>
+                    <li><a href="login.php">Login</a></li>
+                    <hr>
+                    <li><a href="cadastro.php">Cadastro</a></li>
+                    <hr>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul> 
+        </div> 
     </header>
     <div class="session-user" aria-hidden="true">
         <!-- Só aparece valor após usar session -->
     </div>
+
 
     <main>
         <div class="container">
