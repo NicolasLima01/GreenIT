@@ -36,7 +36,7 @@ session_start();
         <div></div>
 
         <div class="dropdown">
-            <!-- Menu hamburguer -->
+            <!-- Menu dropdown -->
             <img height="40px" width="40px" src="images/cardapio-menu.png" alt="Menu">
                 <ul>
                     <li><a href="#">Conceitos</a></li>

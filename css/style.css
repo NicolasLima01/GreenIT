@@ -95,35 +95,56 @@ nav a:hover{
 .dropdown{
     position: relative;
     display: block;
+    width: 150px;
+    height: 100%;
+}
+
+.dropdown img{
+    transform: translateY(30%);
+    margin-left: 50px;
 }
 
 /* Lista do dropdown */
 .dropdown ul{
+    min-width: 150px;
+    height: auto;
     /* Desativa a exibição do elemento  */
-    display: none;
     position: absolute; 
-    background-color: yellowgreen;
-    min-width: 200px;
-    height: 100px;
+    top: 100%;
+    background-color:rgb(44, 44, 44);
+    display: none;
+    text-align: center; /*Alinha o texto no centro*/
+    vertical-align: middle;
 }
 
 /*Quando o mouse passa sobre o dropdown, mostra o conteudo*/
 .dropdown:hover ul {
     display: block;
+    border-bottom-left-radius: 5px; /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 5px; /*borda redonda no canto inferior esquerdo*/
 }
 .dropdown:hover ul hr{
-    color: black;
     margin: 0 2px;
 }
 
 .dropdown ul li{
     list-style: none;
-    width: 200px;
-    height: 20px;
+    height: 30px;
+}
+.dropdown ul li:hover{
+
 }
 .dropdown ul li a{
+    height: 100%;
     text-decoration: none;
-    color: black;
+    color: rgb(194, 240, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown ul li:nth-child(5){
+    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
 }
 
 /*---------------------------------------------
