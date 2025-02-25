@@ -24,7 +24,7 @@ body{
 header{
     background-color: rgb(85, 240, 85);
     height: 10vh;
-    padding: 0 200px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +89,9 @@ nav a:hover{
     background-color: green;
 } 
 
-/* DROPDOWN LIST */
+/* --------------------------
+        DROPDOWN LIST 
+---------------------------*/
 
 /* Div do dropdown */
 .dropdown{
@@ -99,6 +101,10 @@ nav a:hover{
     height: 100%;
 }
 
+/* .dropdown:hover{
+    background-color: rgb(120, 199, 120);
+} */
+
 .dropdown img{
     transform: translateY(30%);
     margin-left: 50px;
@@ -107,14 +113,12 @@ nav a:hover{
 /* Lista do dropdown */
 .dropdown ul{
     min-width: 150px;
-    height: auto;
-    /* Desativa a exibição do elemento  */
+    height: auto; /* Tamanho se auto regula */
     position: absolute; 
-    top: 100%;
+    top: 100%; /* Faz com que a lista apareça debaixo da linha do header*/
     background-color:rgb(44, 44, 44);
+    /* Desativa a exibição do elemento  */
     display: none;
-    text-align: center; /*Alinha o texto no centro*/
-    vertical-align: middle;
 }
 
 /*Quando o mouse passa sobre o dropdown, mostra o conteudo*/
@@ -128,23 +132,30 @@ nav a:hover{
 }
 
 .dropdown ul li{
-    list-style: none;
+    list-style: none; /* tira o estilo de lista*/
     height: 30px;
 }
-.dropdown ul li:hover{
 
+.dropdown ul li a:hover{
+    background-color:rgb(24, 24, 24);
 }
+
 .dropdown ul li a{
+    /* Tamanho se reajusta*/
     height: 100%;
-    text-decoration: none;
-    color: rgb(194, 240, 194);
+    width: 100%;
+    text-decoration: none; /*Tira o traçado do link*/
+    color: rgb(104, 248, 104); /* cor da fonte*/
+
+    /* Alinhando texto */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.dropdown ul li:nth-child(5){
-    border-bottom-left-radius: 10px; /*borda redonda no canto inferior direito*/
-    border-bottom-right-radius: 10px; /*borda redonda no canto inferior esquerdo*/
+
+.dropdown ul li:nth-child(5) a:hover{
+    border-bottom-left-radius: 5px; /*borda redonda no canto inferior direito*/
+    border-bottom-right-radius: 5px; /*borda redonda no canto inferior esquerdo*/
 }
 
 /*---------------------------------------------
