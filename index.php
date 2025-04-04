@@ -30,26 +30,23 @@ session_start();
                 <li><a href="importancia.php">Importância</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
-                <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li>
+                <li class="dropdown">
+                    <!-- Menu dropdown -->
+                    <img height="40px" width="40px" src="images/cardapio.png" alt="Menu">
+                    <ul>
+                        <li><a href="conceitos.php">Conceitos</a></li>
+                        <hr>
+                        <li><a href="importancia.php">Importância</a></li>
+                        <hr>
+                        <li><a href="login.php">Login</a></li>
+                        <hr>
+                        <li><a href="cadastro.php">Cadastro</a></li>
+                        <hr>
+                        <li><a href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
             </menu>
         </nav>
-        <div></div>
-
-        <div class="dropdown">
-            <!-- Menu dropdown -->
-            <img height="40px" width="40px" src="images/cardapio.png" alt="Menu">
-                <ul>
-                    <li><a href="conceitos.php">Conceitos</a></li>
-                    <hr>
-                    <li><a href="importancia.php">Importância</a></li>
-                    <hr>
-                    <li><a href="login.php">Login</a></li>
-                    <hr>
-                    <li><a href="cadastro.php">Cadastro</a></li>
-                    <hr>
-                    <li><a href="logout.php">Logout</a></li>
-                </ul> 
-        </div> 
     </header>
     <div class="session-user" aria-hidden="true">
         <!-- Só aparece valor após usar session -->
