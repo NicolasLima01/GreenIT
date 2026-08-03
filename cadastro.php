@@ -49,8 +49,8 @@ if ($_POST) {
         <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
         <nav>
             <menu>
-                <li><a href="conceitos.php">Conceitos</a></li>
-                <li><a href="importancia.php">Importância</a></li>
+                <li><a href="#conceito">Conceitos</a></li>
+                <li><a href="#importancia">Importância</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
             </menu>

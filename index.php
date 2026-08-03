@@ -31,10 +31,13 @@ session_start();
             <menu>
 
                 <!-- Links do nav -->
-                <li><a href="conceitos.php">Conceitos</a></li>
-                <li><a href="importancia.php">Importância</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="cadastro.php">Cadastro</a></li>
+                <li><a href="#conceito">Conceito</a></li>
+                <li><a href="#importancia">Importância</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a role="button" href="login.php">Login</a></li>
+                <li><a role="button" href="cadastro.php">Cadastro</a></li>
+                <!-- <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li> -->
 
                 <!-- Menu dropdown, aparece em telas menores -->
                 <li class="dropdown">
@@ -44,9 +47,9 @@ session_start();
 
                     <!-- Links do Dropdown -->
                     <ul>
-                        <li><a href="conceitos.php">Conceitos</a></li>
+                        <li><a href="#">Conceito</a></li>
                         <hr>
-                        <li><a href="importancia.php">Importância</a></li>
+                        <li><a href="#">Importância</a></li>
                         <hr>
                         <li><a href="login.php">Login</a></li>
                         <hr>
@@ -77,40 +80,48 @@ session_start();
             </section>
 
             <!-- Sessão 1 -->
-            <section class="topico-sessao">
-                <hr>
+            <section id="conceito" class="topico-sessao">
                 <h2>O que é GreenIT?</h2><br>
                 <p>GreenIT ou TI Verde compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p><br>
                 <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
             </section>
 
+            <section id="importancia" class="topico-sessao">
+                <h2>Importância da Sustentabilidade em TI</h2> </br>
+                <p>As empresas de tecnologia têm uma pegada ambiental significativa. Segundo dados da Agência Internacional de Energia, os data centers e as redes de transmissão representam cerca de 3% do consumo global de eletricidade, e essa participação tende a aumentar com a expansão da computação em nuvem, inteligência artificial e Internet das Coisas (IoT). </p> </br>
+                <p>Práticas de Green IT ajudam a conter esse crescimento. Ao reduzir o consumo energético e o volume de equipamentos descartados, as empresas diminuem custos operacionais e alinham suas operações a padrões internacionais de sustentabilidade. Além disso, antecipam-se às regulamentações ambientais, que vêm se tornando mais rigorosas em diferentes mercados.</p>
+            </section>
+
             <!-- Sessão 2 -->
-            <section class="topico-sessao">
-                <hr>
+            <section id="beneficios" class="topico-sessao">
+
                 <h2>Benefícios</h2><br>
+
                 <menu>
-                    <h3>Redução de custos</h3><br>
                     <li>
-                        Ao investir em equipamentos mais eficientes, as empresas podem reduzir significativamente o consumo de energia, refletindo diretamente em contas de eletricidade mais baixas.
-                    </li><br>
-                    <h3>Renova os processos</h3><br>
+                        <h3>Redução de custos</h3>
+                        <p>Ao investir em equipamentos mais eficientes, as empresas podem reduzir significativamente o consumo de energia, refletindo diretamente em contas de eletricidade mais baixas.</p>
+                    </li>
+
                     <li>
-                        A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão abrangente de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.
-                    </li><br>
-                    <h3>Cuida do ecossistema</h3><br>
+                        <h3>Renova os processos</h3>
+                        <p>A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão abrangente de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.</p>
+                    </li>
+
                     <li>
-                        A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão holística de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.
-                    </li><br>
-                    <h3>Melhora a imagem da empresa</h3><br>
+                        <h3>Cuida do ecossistema</h3>
+                        <p>A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão holística de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.</p>
+                    </li>
+
                     <li>
-                        A responsabilidade ambiental tornou-se um diferencial competitivo no mercado global. Consumidores, parceiros e stakeholders estão cada vez mais atentos às práticas sustentáveis das empresas.
-                    </li><br>
+                        <h3>Melhora a imagem da empresa</h3>
+                        <p>A responsabilidade ambiental tornou-se um diferencial competitivo no mercado global. Consumidores, parceiros e stakeholders estão cada vez mais atentos às práticas sustentáveis das empresas.</p>
+                    </li>
                 </menu>
             </section>
 
             <!-- Sessão 3 -->
-            <section class="topico-sessao">
-                <hr>
+            <section id="praticas" class="topico-sessao">
                 <h2>Quais são as melhores práticas de Green IT?</h2><br>
                 <b>Utilizar fontes de energia limpa:</b><br>
                 <p>A transição para fontes de energia renováveis é uma das iniciativas mais impactantes no universo da TI Verde. Ao optar por fontes como energia solar ou eólica, as empresas podem significativamente reduzir sua pegada de carbono.</p><br>
