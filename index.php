@@ -22,17 +22,27 @@ session_start();
 
 <body>
 
+
+    <!-- HEADER -->
+
     <header>
         <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
         <nav>
             <menu>
+
+                <!-- Links do nav -->
                 <li><a href="conceitos.php">Conceitos</a></li>
                 <li><a href="importancia.php">Importância</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
+
+                <!-- Menu dropdown, aparece em telas menores -->
                 <li class="dropdown">
-                    <!-- Menu dropdown -->
+
+                    <!-- Icone do menu -->
                     <img height="40px" width="40px" src="images/cardapio.png" alt="Menu">
+
+                    <!-- Links do Dropdown -->
                     <ul>
                         <li><a href="conceitos.php">Conceitos</a></li>
                         <hr>
@@ -53,11 +63,20 @@ session_start();
     </div>
 
 
+    <!-- MAIN -->
+
     <main>
         <div class="container">
+
             <div class="titulo">
                 <h1>Green IT - O Futuro da Tecnologia</h1>
             </div>
+
+            <section class="topico-sessao">
+                <p>Nunca foi tão urgente alinhar tecnologia e sustentabilidade. No centro dessa mudança está o Green IT, ou TI Verde, uma abordagem que transforma o uso da tecnologia em algo mais consciente e menos impactante para o planeta. </p>
+            </section>
+
+            <!-- Sessão 1 -->
             <section class="topico-sessao">
                 <hr>
                 <h2>O que é GreenIT?</h2><br>
@@ -65,6 +84,7 @@ session_start();
                 <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
             </section>
 
+            <!-- Sessão 2 -->
             <section class="topico-sessao">
                 <hr>
                 <h2>Benefícios</h2><br>
@@ -88,6 +108,7 @@ session_start();
                 </menu>
             </section>
 
+            <!-- Sessão 3 -->
             <section class="topico-sessao">
                 <hr>
                 <h2>Quais são as melhores práticas de Green IT?</h2><br>
@@ -95,13 +116,16 @@ session_start();
                 <p>A transição para fontes de energia renováveis é uma das iniciativas mais impactantes no universo da TI Verde. Ao optar por fontes como energia solar ou eólica, as empresas podem significativamente reduzir sua pegada de carbono.</p><br>
 
                 <b>Cloud Computing:</b><br>
-                <p>A computação em nuvem revolucionou a forma como as empresas acessam e armazenam dados. Optar por soluções baseadas na nuvem, especialmente aquelas que seguem a abordagem cloud first, significa que as empresas podem reduzir significativamente a necessidade de hardware on-site.
-                    Isso diminui o consumo de energia e reduz a necessidade de resfriamento, outro grande consumidor de energia em centros de dados. Além disso, os provedores de nuvem frequentemente atualizam e otimizam sua infraestrutura, garantindo que os recursos sejam usados da maneira mais eficiente possível.</p>
+                <p>A computação em nuvem revolucionou a forma como as empresas acessam e armazenam dados. Optar por soluções baseadas na nuvem, especialmente aquelas que seguem a abordagem cloud first, significa que as empresas podem reduzir significativamente a necessidade de hardware on-site.</p> <br>
+                <p>Isso diminui o consumo de energia e reduz a necessidade de resfriamento, outro grande consumidor de energia em centros de dados. Além disso, os provedores de nuvem frequentemente atualizam e otimizam sua infraestrutura, garantindo que os recursos sejam usados da maneira mais eficiente possível.</p>
 
             </section>
         </div>
 
     </main>
+
+
+    <!-- FOOTER -->
 
     <footer>
         <p>&copy GreenIT - Todos os direitos reservados</p>
