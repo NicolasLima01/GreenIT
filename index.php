@@ -30,14 +30,20 @@ session_start();
         <nav>
             <menu>
 
-                <!-- Links do nav -->
-                <li><a href="#conceito">Conceito</a></li>
-                <li><a href="#importancia">Importância</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#praticas">Práticas</a></li>
-                <li><a role="button" href="login.php">Login</a></li>
-                <li><a role="button" href="cadastro.php">Cadastro</a></li>
-                <!-- <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li> -->
+                <!-- Links da página -->
+                <li>
+                    <a href="#conceito">Conceito</a>
+                    <a href="#importancia">Importância</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#praticas">Práticas</a>
+                </li>
+
+                <!-- Links de login, cadastro e botão de loggout -->
+                <li>
+                    <a role="button" href="login.php">Login</a>
+                    <a role="button" href="cadastro.php">Cadastro</a>
+                    <!-- <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li> -->
+                </li>
 
                 <!-- Menu dropdown, aparece em telas menores -->
                 <li class="dropdown">
@@ -47,9 +53,13 @@ session_start();
 
                     <!-- Links do Dropdown -->
                     <ul>
-                        <li><a href="#">Conceito</a></li>
+                        <li><a href="#conceito">Conceito</a></li>
                         <hr>
-                        <li><a href="#">Importância</a></li>
+                        <li><a href="#importancia">Importância</a></li>
+                        <hr>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <hr>
+                        <li><a href="#praticas">Práticas</a></li>
                         <hr>
                         <li><a href="login.php">Login</a></li>
                         <hr>
