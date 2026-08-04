@@ -42,7 +42,9 @@ session_start();
                 <li>
                     <a role="button" href="login.php">Login</a>
                     <a role="button" href="cadastro.php">Cadastro</a>
-                    <!-- <li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li> -->
+                    <?php if (isset($_SESSION['usuario']))
+                        echo '<a href="logout.php"><img src="images/logout.png" alt="Logout"></a>';
+                    ?>
                 </li>
 
                 <!-- Menu dropdown, aparece em telas menores -->

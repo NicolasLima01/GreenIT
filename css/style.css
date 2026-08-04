@@ -50,6 +50,7 @@ header {
 nav {
     
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -106,8 +107,8 @@ nav li:nth-child(5) a {
 }
 
 nav li a img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Acontece quando o mouse está sobre um item de menu */

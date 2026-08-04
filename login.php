@@ -4,6 +4,11 @@
 //                        LOGIN
 //------------------------------------------------------
 
+// Para usar uma sessão já criada, 
+// é necessário informar o nome da sessão
+session_name("greenit");
+session_start();
+
 if ($_POST) {
     include 'conexao.php';
     $emailLogin = $_POST['email-login'];
@@ -22,20 +27,23 @@ if ($_POST) {
     //Verificando a senha criptografada
     $hash = password_verify($senhaLogin, $usuario['senha']);
 
-    if ($usuario['id'] > 0 && $hash == true)
-    {
+    if ($usuario['id'] > 0 && $hash == true) {
+        
         //login bem sucedido
-        session_name("greenit");
-        session_start();
+
+        // Inicia a sessao se ela ainda não estiver ativa
+        if (!isset($_SESSION['usuario'])) {
+            session_name("greenit");
+            session_start();
+        }
+
         $_SESSION['usuario'] = $usuario['nome'];
-        //echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
+        echo "<script>alert('Login efetuado com sucesso! Bem vindo!');</script>";
         header('../index.php');
-    }
-    else {
+    } else {
         //falha no logon 
         echo "<script> alert('Usuario ou senha incorretos');</script>";
     }
-    
 }
 ?>
 
@@ -54,15 +62,17 @@ if ($_POST) {
 <body>
     <header>
         <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
-        <nav>
-            <menu>
-                <li><a href="#conceito">Conceitos</a></li>
-                <li><a href="#importancia">Importância</a></li>
+        <nav id="nav-form">
+            <menu id="menu-form">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
+                <?php if (isset($_SESSION['usuario']))
+                    echo '<li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li>';
+                ?>
             </menu>
         </nav>
     </header>
+
     <main>
         <div class="formulario">
             <div>
@@ -73,8 +83,8 @@ if ($_POST) {
                 <label for="email-login">E-mail:</label>
                 <input type=email name="email-login" required aria-autocomplete="none" placeholder="Digite seu e-mail">
                 <label for="senha-login">Senha:</label>
-                <input type=password name="senha-login" required
-                    aria-autocomplete="none" placeholder="Digite sua senha">
+                <input type=password name="senha-login" required aria-autocomplete="none"
+                    placeholder="Digite sua senha">
                 <input type="submit" value="Entrar" id="button">
             </form>
         </div>

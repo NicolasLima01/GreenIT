@@ -1,14 +1,35 @@
+/* HEADER */
+
+#nav-form{
+    display: flex;
+    justify-content: end;
+}
+
+#nav-form #menu-form {
+    width: 27%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav #menu-form li {
+    list-style-type: none;
+    color: black;
+    font-size: 16px;
+    width: auto;
+    
+}
+
 
 /*------------------MAIN--------------------*/
 
-main{
+main {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.formulario{
+.formulario {
     margin-top: 50px;
     border: solid 1px black;
     border-radius: 20px;
@@ -17,47 +38,53 @@ main{
     background-color: white;
 }
 
-.formulario div{
-    height: 10vh; /* 10 do tamanho da pg */
+.formulario div {
+    height: 10vh;
+    /* 10 do tamanho da pg */
     color: rgb(0, 87, 0);
     background-color: white;
-    border-top-right-radius: 20px; /* Borda superior direita */
-    border-top-left-radius: 20px; /* Borda superior esquerda */
+    border-top-right-radius: 20px;
+    /* Borda superior direita */
+    border-top-left-radius: 20px;
+    /* Borda superior esquerda */
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
-hr{
+hr {
     color: black;
 }
 
-form{
+form {
     padding: 10px;
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;   
+    border-bottom-left-radius: 20px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
-form label{
-    margin: 10px 0px 5px 0px; /*10px para cima, 5px para baixo*/
+form label {
+    margin: 10px 0px 5px 0px;
+    /*10px para cima, 5px para baixo*/
     font-size: 14px;
     font-weight: bold;
     color: rgb(1, 92, 1);
 }
 
-form input{
+form input {
     height: 30px;
-    padding: 0px 10px; /* espaço para placeholder */
-    font-size: 14px; /*tamanho da fonte*/
+    padding: 0px 10px;
+    /* espaço para placeholder */
+    font-size: 14px;
+    /*tamanho da fonte*/
     border-radius: 5px;
     border: solid 1px gray;
 }
 
- 
-form #button{
+
+form #button {
     height: 30px;
     margin-top: 10px;
     color: white;
@@ -66,6 +93,6 @@ form #button{
     border: solid 1px green;
 }
 
-form #button:hover{
+form #button:hover {
     background-color: rgb(7, 141, 7);
 }

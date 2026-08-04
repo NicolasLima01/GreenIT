@@ -4,7 +4,9 @@
 //                        CADASTRO
 //------------------------------------------------------
 
-//iniciando sessao
+// Para usar uma sessão já criada, 
+// é necessário informar o nome da sessão
+session_name("greenit");
 session_start();
 
 //Incluir arquivo de conexao
@@ -13,22 +15,20 @@ if ($_POST) {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $senha = $_POST['senha']; 
+    $senha = $_POST['senha'];
     //Gera criptografia individual, que não é repetida em valores iguais como o md5
     $hashSenha = password_hash($senha, PASSWORD_DEFAULT);
 
-        //montando query de cadastro
-        $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone', '$hashSenha')";
+    //montando query de cadastro
+    $cadastro = "INSERT usuario values (0,'$nome','$email','$telefone', '$hashSenha')";
 
-        //resultado da query
-        $sql = $conn->prepare($cadastro);
-        if ($sql->execute()){ 
-            echo "<script>alert('Cadastro feito!')</script>";
-        
-        } else { 
-            echo "<script>alert('Erro no cadastro!');</script>";
-        } 
-    
+    //resultado da query
+    $sql = $conn->prepare($cadastro);
+    if ($sql->execute()) {
+        echo "<script>alert('Cadastro feito!')</script>";
+    } else {
+        echo "<script>alert('Erro no cadastro!');</script>";
+    }
 }
 ?>
 
@@ -47,20 +47,22 @@ if ($_POST) {
 <body>
     <header>
         <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
-        <nav>
-            <menu>
-                <li><a href="#conceito">Conceitos</a></li>
-                <li><a href="#importancia">Importância</a></li>
+        <nav id="nav-form">
+            <menu id="menu-form">
                 <li><a href="login.php">Login</a></li>
                 <li><a href="cadastro.php">Cadastro</a></li>
+                <?php if (isset($_SESSION['usuario']))
+                    echo '<li><a href="logout.php"><img src="images/logout.png" alt="Logout"></a></li>';
+                ?>
             </menu>
         </nav>
     </header>
+
     <main>
         <div class="formulario">
-            <div>  
+            <div>
                 <h1>Cadastro</h1>
-            </div>      
+            </div>
             <hr>
             <form action="cadastro.php" method="post">
                 <!-- aria-autocomplete="none" faz com que o navegador não complete o texto -->
