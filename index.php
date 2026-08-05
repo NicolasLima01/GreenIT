@@ -94,14 +94,13 @@ session_start();
             <!-- Sessão 1 -->
             <section id="conceito" class="topico-sessao">
                 <h2>O que é GreenIT?</h2><br>
-                <p>GreenIT ou TI Verde compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p><br>
-                <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
+                <p>GreenIT ou TI Verde compreende práticas que visam preservar o meio ambiente. Isto é, fazer uso dos recursos computacionais da maneira mais ‘limpa’ possível, prezando para que as atividades envolvidas nos avanços da TI não tragam tantas consequências negativas para o planeta.</p>
             </section>
-
+            
             <section id="importancia" class="topico-sessao">
                 <h2>Importância da Sustentabilidade em TI</h2> </br>
                 <p>As empresas de tecnologia têm uma pegada ambiental significativa. Segundo dados da Agência Internacional de Energia, os data centers e as redes de transmissão representam cerca de 3% do consumo global de eletricidade, e essa participação tende a aumentar com a expansão da computação em nuvem, inteligência artificial e Internet das Coisas (IoT). </p> </br>
-                <p>Práticas de Green IT ajudam a conter esse crescimento. Ao reduzir o consumo energético e o volume de equipamentos descartados, as empresas diminuem custos operacionais e alinham suas operações a padrões internacionais de sustentabilidade. Além disso, antecipam-se às regulamentações ambientais, que vêm se tornando mais rigorosas em diferentes mercados.</p>
+                <p>A adoção do Green IT não beneficia apenas o meio ambiente. As empresas que implementam práticas de TI Verde frequentemente experimentam reduções significativas nos custos operacionais, melhoram sua imagem perante o mercado e clientes e cumprem regulamentações ambientais mais rigorosas.</p>
             </section>
 
             <!-- Sessão 2 -->
@@ -111,22 +110,22 @@ session_start();
 
                 <menu>
                     <li>
-                        <h3>Redução de custos</h3>
+                        <h3> 1. Redução de custos</h3>
                         <p>Ao investir em equipamentos mais eficientes, as empresas podem reduzir significativamente o consumo de energia, refletindo diretamente em contas de eletricidade mais baixas.</p>
                     </li>
 
                     <li>
-                        <h3>Renova os processos</h3>
+                        <h3> 2. Renova os processos</h3>
                         <p>A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão abrangente de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.</p>
                     </li>
 
                     <li>
-                        <h3>Cuida do ecossistema</h3>
+                        <h3> 3. Cuida do ecossistema</h3>
                         <p>A implementação da TI Verde não se limita apenas ao hardware. Ela promove uma revisão holística de como a tecnologia é utilizada dentro da organização. Ao adotar práticas sustentáveis, as empresas são incentivadas a reavaliar e otimizar seus processos internos.</p>
                     </li>
 
                     <li>
-                        <h3>Melhora a imagem da empresa</h3>
+                        <h3> 4. Melhora a imagem da empresa</h3>
                         <p>A responsabilidade ambiental tornou-se um diferencial competitivo no mercado global. Consumidores, parceiros e stakeholders estão cada vez mais atentos às práticas sustentáveis das empresas.</p>
                     </li>
                 </menu>
