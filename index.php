@@ -26,7 +26,7 @@ session_start();
     <!-- HEADER -->
 
     <header>
-        <a href="index.php"><img src="images/GreenIT.png" alt=""></a>
+        <a href="index.php"><img src="images/GreenIT.svg" alt=""></a>
         <nav>
             <menu>
 
